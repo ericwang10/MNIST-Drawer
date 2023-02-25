@@ -60,7 +60,7 @@ while(1):
         res = model.predict(img)
         prediction = np.argmax(res)
         print(prediction)
-        print(img)
+        #print(img)
 
         img = np.zeros(WINDOW_DIM, np.uint8)
     cv2.putText(img, 'Prediction: ' + str(prediction), (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 255, 0), 2, cv2.LINE_AA)
